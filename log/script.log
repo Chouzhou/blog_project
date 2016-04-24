@@ -1,0 +1,2831 @@
+2016-04-24 10:03:38,034 [Thread-2:123145310715904] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 23, in index
+    return render(request, 'index.html', locals())
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 96, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 32, in get_template
+    return engine.get_template(template_name, dirs)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 40, in get_template
+    return Template(self.engine.get_template(template_name, dirs), self)
+  File "/Library/Python/2.7/site-packages/django/template/engine.py", line 190, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "/Library/Python/2.7/site-packages/django/template/engine.py", line 157, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/Library/Python/2.7/site-packages/django/template/loaders/base.py", line 46, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 189, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 234, in compile_nodelist
+    e.template_debug = self.get_exception_info(e, e.token)
+AttributeError: 'exceptions.RuntimeError' object has no attribute 'token'
+2016-04-24 10:03:57,186 [Thread-2:123145310715904] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 23, in index
+    return render(request, 'index.html', locals())
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': settings.SITE_DESC,})
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 96, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 32, in get_template
+    return engine.get_template(template_name, dirs)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 40, in get_template
+    return Template(self.engine.get_template(template_name, dirs), self)
+  File "/Library/Python/2.7/site-packages/django/template/engine.py", line 190, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "/Library/Python/2.7/site-packages/django/template/engine.py", line 157, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/Library/Python/2.7/site-packages/django/template/loaders/base.py", line 46, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 189, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 234, in compile_nodelist
+    e.template_debug = self.get_exception_info(e, e.token)
+AttributeError: 'exceptions.RuntimeError' object has no attribute 'token'
+2016-04-24 10:04:35,869 [Thread-2:123145310715904] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 23, in index
+    return render(request, 'index.html', locals())
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+ValueError: dictionary update sequence element #0 has length 18607; 2 is required
+2016-04-24 13:51:52,223 [Thread-2:123145310715904] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 28, in index
+    return render(request, 'index.html', locals())
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/usr/local/Cellar/python/2.7.11/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': u'%s' % settings.SITE_DESC,}
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe4 in position 0: ordinal not in range(128)
+2016-04-24 14:07:03,570 [Thread-2:123145310715904] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 28, in index
+    return render(request, 'index.html', locals())
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/usr/local/Cellar/python/2.7.11/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 12, in global_setting
+    'SITE_DESC ': u'%s' % settings.SITE_DESC,}
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe4 in position 0: ordinal not in range(128)
+2016-04-24 14:32:53,410 [Thread-2:123145310715904] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 24, in index
+    return render(request, 'index.html', locals())
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/usr/local/Cellar/python/2.7.11/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 11, in global_setting
+    return {'SITE_NAME': settings.WEBSITE_NAME,
+  File "/Library/Python/2.7/site-packages/django/conf/__init__.py", line 56, in __getattr__
+    return getattr(self._wrapped, name)
+AttributeError: 'Settings' object has no attribute 'WEBSITE_NAME'
+2016-04-24 14:33:19,938 [Thread-2:123145310715904] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 24, in index
+    return render(request, 'index.html', locals())
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 204, in render
+    with context.bind_template(self):
+  File "/usr/local/Cellar/python/2.7.11/Frameworks/Python.framework/Versions/2.7/lib/python2.7/contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "/Library/Python/2.7/site-packages/django/template/context.py", line 260, in bind_template
+    updates.update(processor(self.request))
+  File "/Users/Jack/PycharmProjects/blog_project/blog/views.py", line 11, in global_setting
+    return {'SITE_NAME': settings.WEBSITE_NAME,
+  File "/Library/Python/2.7/site-packages/django/conf/__init__.py", line 56, in __getattr__
+    return getattr(self._wrapped, name)
+AttributeError: 'Settings' object has no attribute 'WEBSITE_NAME'
