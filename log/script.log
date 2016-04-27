@@ -2829,3 +2829,321 @@ Traceback (most recent call last):
   File "/Library/Python/2.7/site-packages/django/conf/__init__.py", line 56, in __getattr__
     return getattr(self._wrapped, name)
 AttributeError: 'Settings' object has no attribute 'WEBSITE_NAME'
+2016-04-27 07:37:16,274 [Thread-20:123145310715904] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/blog/category/add/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/options.py", line 541, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/sites.py", line 244, in inner
+    return view(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/options.py", line 1437, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 184, in inner
+    return func(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/options.py", line 1382, in changeform_view
+    self.log_addition(request, new_object, change_message)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/options.py", line 716, in log_addition
+    change_message=message,
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/models.py", line 27, in log_action
+    change_message=change_message,
+  File "/Library/Python/2.7/site-packages/django/db/models/manager.py", line 122, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 401, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 708, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 736, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 820, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 859, in _do_insert
+    using=using, raw=raw)
+  File "/Library/Python/2.7/site-packages/django/db/models/manager.py", line 122, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 1039, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Library/Python/2.7/site-packages/django/db/models/sql/compiler.py", line 1060, in execute_sql
+    cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/utils.py", line 95, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/Library/Python/2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/mysql/base.py", line 112, in execute
+    return self.cursor.execute(query, args)
+  File "/usr/local/lib/python2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.11-x86_64.egg/MySQLdb/cursors.py", line 202, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/lib/python2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.11-x86_64.egg/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+IntegrityError: (1452, 'Cannot add or update a child row: a foreign key constraint fails (`blogdb`.`django_admin_log`, CONSTRAINT `django_admin_log_user_id_c564eba6_fk_auth_user_id` FOREIGN KEY (`user_id`) REFERENCES `auth_user` (`id`))')
+2016-04-27 10:06:18,702 [Thread-35:123145310715904] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/blog/category/add/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/options.py", line 541, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/sites.py", line 244, in inner
+    return view(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/options.py", line 1437, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 184, in inner
+    return func(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/options.py", line 1382, in changeform_view
+    self.log_addition(request, new_object, change_message)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/options.py", line 716, in log_addition
+    change_message=message,
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/models.py", line 27, in log_action
+    change_message=change_message,
+  File "/Library/Python/2.7/site-packages/django/db/models/manager.py", line 122, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 401, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 708, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 736, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 820, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 859, in _do_insert
+    using=using, raw=raw)
+  File "/Library/Python/2.7/site-packages/django/db/models/manager.py", line 122, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 1039, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Library/Python/2.7/site-packages/django/db/models/sql/compiler.py", line 1060, in execute_sql
+    cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/utils.py", line 95, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/Library/Python/2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/mysql/base.py", line 112, in execute
+    return self.cursor.execute(query, args)
+  File "/usr/local/lib/python2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.11-x86_64.egg/MySQLdb/cursors.py", line 202, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/lib/python2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.11-x86_64.egg/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+IntegrityError: (1452, 'Cannot add or update a child row: a foreign key constraint fails (`blogdb`.`django_admin_log`, CONSTRAINT `django_admin_log_user_id_c564eba6_fk_auth_user_id` FOREIGN KEY (`user_id`) REFERENCES `auth_user` (`id`))')
+2016-04-27 10:15:47,811 [Thread-49:123145310715904] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/blog/user/add/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/options.py", line 541, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/sites.py", line 244, in inner
+    return view(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/options.py", line 1437, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 184, in inner
+    return func(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/options.py", line 1382, in changeform_view
+    self.log_addition(request, new_object, change_message)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/options.py", line 716, in log_addition
+    change_message=message,
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/models.py", line 27, in log_action
+    change_message=change_message,
+  File "/Library/Python/2.7/site-packages/django/db/models/manager.py", line 122, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 401, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 708, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 736, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 820, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 859, in _do_insert
+    using=using, raw=raw)
+  File "/Library/Python/2.7/site-packages/django/db/models/manager.py", line 122, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 1039, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Library/Python/2.7/site-packages/django/db/models/sql/compiler.py", line 1060, in execute_sql
+    cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/utils.py", line 95, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/Library/Python/2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/mysql/base.py", line 112, in execute
+    return self.cursor.execute(query, args)
+  File "/usr/local/lib/python2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.11-x86_64.egg/MySQLdb/cursors.py", line 202, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/lib/python2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.11-x86_64.egg/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+IntegrityError: (1452, 'Cannot add or update a child row: a foreign key constraint fails (`blogdb`.`django_admin_log`, CONSTRAINT `django_admin_log_user_id_c564eba6_fk_auth_user_id` FOREIGN KEY (`user_id`) REFERENCES `auth_user` (`id`))')
+2016-04-27 11:21:09,635 [Thread-27:123145310715904] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/blog/article/add/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/options.py", line 541, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/sites.py", line 244, in inner
+    return view(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/options.py", line 1437, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 184, in inner
+    return func(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/options.py", line 1378, in changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/options.py", line 991, in save_model
+    obj.save()
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 708, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 736, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 820, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 859, in _do_insert
+    using=using, raw=raw)
+  File "/Library/Python/2.7/site-packages/django/db/models/manager.py", line 122, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 1039, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Library/Python/2.7/site-packages/django/db/models/sql/compiler.py", line 1060, in execute_sql
+    cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/mysql/base.py", line 117, in execute
+    six.reraise(utils.IntegrityError, utils.IntegrityError(*tuple(e.args)), sys.exc_info()[2])
+  File "/Library/Python/2.7/site-packages/django/db/backends/mysql/base.py", line 112, in execute
+    return self.cursor.execute(query, args)
+  File "/usr/local/lib/python2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.11-x86_64.egg/MySQLdb/cursors.py", line 202, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/lib/python2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.11-x86_64.egg/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+IntegrityError: (1048, "Column 'user_id' cannot be null")
+2016-04-27 11:59:42,466 [Thread-3:123145310715904] [django.request:284] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/blog/article/add/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/options.py", line 541, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/sites.py", line 244, in inner
+    return view(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/options.py", line 1437, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/Library/Python/2.7/site-packages/django/utils/decorators.py", line 184, in inner
+    return func(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/options.py", line 1378, in changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "/Library/Python/2.7/site-packages/django/contrib/admin/options.py", line 991, in save_model
+    obj.save()
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 708, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 736, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 820, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/Library/Python/2.7/site-packages/django/db/models/base.py", line 859, in _do_insert
+    using=using, raw=raw)
+  File "/Library/Python/2.7/site-packages/django/db/models/manager.py", line 122, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/db/models/query.py", line 1039, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Library/Python/2.7/site-packages/django/db/models/sql/compiler.py", line 1060, in execute_sql
+    cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/django/db/backends/mysql/base.py", line 117, in execute
+    six.reraise(utils.IntegrityError, utils.IntegrityError(*tuple(e.args)), sys.exc_info()[2])
+  File "/Library/Python/2.7/site-packages/django/db/backends/mysql/base.py", line 112, in execute
+    return self.cursor.execute(query, args)
+  File "/usr/local/lib/python2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.11-x86_64.egg/MySQLdb/cursors.py", line 202, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/lib/python2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.11-x86_64.egg/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+IntegrityError: (1048, "Column 'user_id' cannot be null")
+2016-04-27 12:19:00,030 [Thread-30:123145310715904] [django.request:103] [csrf:_reject] [WARNING]- Forbidden (CSRF token missing or incorrect.): /admin/upload/kindeditor
+2016-04-27 12:19:27,770 [Thread-31:123145310715904] [django.request:103] [csrf:_reject] [WARNING]- Forbidden (CSRF token missing or incorrect.): /admin/upload/kindeditor
+2016-04-27 12:26:17,846 [Thread-28:123145310715904] [django.request:103] [csrf:_reject] [WARNING]- Forbidden (CSRF token missing or incorrect.): /admin/upload/kindeditor
+2016-04-27 12:27:44,498 [Thread-46:123145310715904] [django.request:103] [csrf:_reject] [WARNING]- Forbidden (CSRF token missing or incorrect.): /admin/upload/kindeditor
+2016-04-27 12:31:20,404 [Thread-25:123145310715904] [django.request:103] [csrf:_reject] [WARNING]- Forbidden (CSRF token missing or incorrect.): /admin/upload/kindeditor
+2016-04-27 12:38:11,991 [Thread-25:123145310715904] [django.request:103] [csrf:_reject] [WARNING]- Forbidden (CSRF token missing or incorrect.): /admin/blog/article/1/change/admin/upload/kindeditor
+2016-04-27 12:39:18,886 [Thread-25:123145310715904] [django.request:103] [csrf:_reject] [WARNING]- Forbidden (CSRF token missing or incorrect.): /admin/blog/article/1/change/admin/upload/kindeditor
+2016-04-27 12:43:11,020 [Thread-25:123145310715904] [django.request:103] [csrf:_reject] [WARNING]- Forbidden (CSRF token missing or incorrect.): /admin/blog/article/1/change/admin/upload/kindeditor
+2016-04-27 12:44:09,978 [Thread-25:123145310715904] [django.request:103] [csrf:_reject] [WARNING]- Forbidden (CSRF token missing or incorrect.): /admin/blog/article/1/change/admin/upload/kindeditor
+2016-04-27 12:49:18,683 [Thread-34:123145310715904] [django.request:103] [csrf:_reject] [WARNING]- Forbidden (CSRF token missing or incorrect.): /admin/upload/kindeditor
+2016-04-27 12:53:06,038 [Thread-26:123145310715904] [django.request:103] [csrf:_reject] [WARNING]- Forbidden (CSRF token missing or incorrect.): /admin/upload/kindeditor
+2016-04-27 12:55:21,484 [Thread-26:123145310715904] [django.request:103] [csrf:_reject] [WARNING]- Forbidden (CSRF token missing or incorrect.): /admin/upload/kindeditor
+2016-04-27 12:56:18,964 [Thread-27:123145310715904] [django.request:103] [csrf:_reject] [WARNING]- Forbidden (CSRF token missing or incorrect.): /admin/upload/kindeditor
+2016-04-27 12:58:12,011 [Thread-36:123145310715904] [django.request:103] [csrf:_reject] [WARNING]- Forbidden (CSRF cookie not set.): /admin/login/
+2016-04-27 12:58:32,582 [Thread-38:123145310715904] [django.request:103] [csrf:_reject] [WARNING]- Forbidden (CSRF token missing or incorrect.): /admin/login/
+2016-04-27 12:58:53,292 [Thread-53:123145310715904] [django.request:103] [csrf:_reject] [WARNING]- Forbidden (CSRF token missing or incorrect.): /admin/upload/kindeditor
+2016-04-27 12:59:39,801 [Thread-78:123145310715904] [django.request:103] [csrf:_reject] [WARNING]- Forbidden (CSRF token missing or incorrect.): /admin/upload/kindeditor
+2016-04-27 13:03:21,929 [Thread-26:123145310715904] [django.request:103] [csrf:_reject] [WARNING]- Forbidden (CSRF token missing or incorrect.): /admin/upload/kindeditor
+2016-04-27 13:05:17,165 [Thread-2:123145310715904] [django.request:103] [csrf:_reject] [WARNING]- Forbidden (CSRF token missing or incorrect.): /admin/upload/kindeditor

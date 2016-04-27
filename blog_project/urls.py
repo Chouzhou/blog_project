@@ -1,3 +1,4 @@
+# -*- coding:utf-8 -*-
 """blog_project URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
@@ -16,8 +17,16 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 from blog.views import index
+from blog_project import settings
+from blog.upload import upload_image
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'$', index, name='index'),
+    # 通用上传图片
+    url(r'^uploads/(?P<path>.*)$', \
+        "django.views.static.serve", \
+        {"document_root": settings.MEDIA_ROOT}),
+    # 文本编辑器上传图片
+    url(r'^admin/upload/(?P<dir_name>[^/])$', upload_image, name='upload_image'),
 ]

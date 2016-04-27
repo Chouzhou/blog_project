@@ -24,7 +24,7 @@ SECRET_KEY = '-c-aaz^^$7#81w53nsklt_5gus%1%x)(*pbv2gki9e_)%5=wmp'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-
+# 如果DEBUG设置是False那必须设置ALLOWED_HOSTS
 ALLOWED_HOSTS = []
 
 # Application definition
@@ -125,7 +125,12 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
-
+# 配置上传文件路径
+MEDIA_URL = '/uploads/'
+# 绝对路径
+MEDIA_ROOT = os.path.join(BASE_DIR, 'uploads')
+# 自定义用户model
+AUTH_USER_MODEL = 'blog.User'
 # 网站的基本信息配置
 SITE_NAME = '鸟嘌呤的个人博客'
 SITE_DESC = '专注python开发,欢迎和大家交流'
