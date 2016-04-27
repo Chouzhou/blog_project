@@ -28,5 +28,5 @@ urlpatterns = [
         "django.views.static.serve", \
         {"document_root": settings.MEDIA_ROOT}),
     # 文本编辑器上传图片
-    url(r'^admin/upload/(?P<dir_name>[^/])$', upload_image, name='upload_image'),
+    url(r'^admin/upload/(?P<dir_name>[^/]+)$', upload_image, name='upload_image'),
 ]
