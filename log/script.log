@@ -3151,3 +3151,35 @@ IntegrityError: (1048, "Column 'user_id' cannot be null")
 2016-04-27 13:24:04,967 [Thread-26:123145310715904] [django.request:103] [csrf:_reject] [WARNING]- Forbidden (CSRF token missing or incorrect.): /admin/upload/kindeditor
 2016-04-27 14:02:38,498 [Thread-26:123145310715904] [django.request:103] [csrf:_reject] [WARNING]- Forbidden (CSRF token missing or incorrect.): /admin/upload/kindeditor
 2016-04-27 14:12:36,920 [Thread-38:123145310715904] [django.request:103] [csrf:_reject] [WARNING]- Forbidden (CSRF token missing or incorrect.): /admin/upload/kindeditor
+2016-04-27 14:57:00,168 [Thread-31:10392] [django.request:98] [csrf:_reject] [WARNING]- Forbidden (CSRF token missing or incorrect.): /admin/upload/kindeditor
+2016-04-27 15:00:18,105 [Thread-79:668] [django.request:98] [csrf:_reject] [WARNING]- Forbidden (CSRF token missing or incorrect.): /admin/upload/kindeditor
+2016-04-27 15:09:46,081 [Thread-24:9772] [django.request:98] [csrf:_reject] [WARNING]- Forbidden (CSRF token missing or incorrect.): /admin/upload/kindeditor
+2016-04-27 15:11:03,266 [Thread-24:13572] [django.request:98] [csrf:_reject] [WARNING]- Forbidden (CSRF token missing or incorrect.): /admin/upload/kindeditor
+2016-04-27 15:14:23,743 [Thread-24:8576] [django.request:98] [csrf:_reject] [WARNING]- Forbidden (CSRF token missing or incorrect.): /admin/upload/kindeditor
+2016-04-27 15:17:16,947 [Thread-24:1840] [django.request:98] [csrf:_reject] [WARNING]- Forbidden (CSRF token missing or incorrect.): /admin/upload/kindeditor
+2016-04-27 15:19:01,973 [Thread-56:12180] [django.request:98] [csrf:_reject] [WARNING]- Forbidden (CSRF token missing or incorrect.): /admin/upload/kindeditor
+2016-04-27 15:26:58,953 [Thread-13:12296] [django.request:98] [csrf:_reject] [WARNING]- Forbidden (CSRF token missing or incorrect.): /admin/upload/kindeditor
+2016-05-09 13:32:46,015 [Thread-2:4508] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "E:\Python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Github Project\python\blog_project\blog\views.py", line 61, in index
+    return render(request, 'index.html', locals())
+  File "E:\Python27\lib\site-packages\django\shortcuts\__init__.py", line 53, in render
+    return HttpResponse(loader.render_to_string(*args, **kwargs),
+  File "E:\Python27\lib\site-packages\django\template\loader.py", line 116, in render_to_string
+    template_name, context, context_instance, dirs, dictionary)
+  File "E:\Python27\lib\site-packages\django\template\engine.py", line 221, in render_to_string
+    return t.render(context_instance)
+  File "E:\Python27\lib\site-packages\django\template\base.py", line 208, in render
+    with context.bind_template(self):
+  File "E:\Python27\lib\contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "E:\Python27\lib\site-packages\django\template\context.py", line 235, in bind_template
+    updates.update(processor(self.request))
+  File "D:\Github Project\python\blog_project\blog\views.py", line 21, in global_setting
+    SITE_URL = settings.SITE_URL
+  File "E:\Python27\lib\site-packages\django\conf\__init__.py", line 49, in __getattr__
+    return getattr(self._wrapped, name)
+AttributeError: 'Settings' object has no attribute 'SITE_URL'
+2016-05-09 13:32:46,815 [Thread-3:1976] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
