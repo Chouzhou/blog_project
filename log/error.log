@@ -1,0 +1,2 @@
+2016-05-11 12:10:29,947 [Thread-71:12336] [blog.views:208] [views:do_login] [ERROR]- Reverse for '' with arguments '()' and keyword arguments '{}' not found. 0 pattern(s) tried: []
+2016-05-11 12:11:13,362 [Thread-78:12780] [blog.views:183] [views:do_reg] [ERROR]- (1062, "Duplicate entry 'Jack' for key 'username'")

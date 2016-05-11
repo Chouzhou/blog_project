@@ -3183,3 +3183,7 @@ Traceback (most recent call last):
     return getattr(self._wrapped, name)
 AttributeError: 'Settings' object has no attribute 'SITE_URL'
 2016-05-09 13:32:46,815 [Thread-3:1976] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2016-05-11 10:29:08,170 [Thread-25:4208] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2016-05-11 10:30:18,707 [Thread-26:12216] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2016-05-11 12:10:03,055 [Thread-63:12156] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2016-05-11 12:12:08,244 [Thread-102:7604] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
